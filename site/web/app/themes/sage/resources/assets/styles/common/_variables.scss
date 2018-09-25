@@ -1,0 +1,24 @@
+/** Colors */
+$brand-primary: #525ddc;
+$color-white: #fff;
+$color-black: #000;
+
+$color-yellow: #fed766;
+$color-blue: #2ab7ca;
+$color-red: #fe4a49;
+$color-grey: #e6e6ea;
+$color-offwhite: #fdfdfd;
+
+/** Box Model  */
+$spacer: 2rem;
+$half-spacer: calc($spacer / 2);
+
+/** Breakpoints */
+$mini: 320px;
+$small: 480px;
+$medium: 720px;
+$large: 1024px;
+$xlarge: 1224px;
+
+/** Fonts */
+$font-main: 1.8rem;

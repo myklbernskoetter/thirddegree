@@ -1,0 +1,113 @@
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+
+  a {
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+  }
+}
+
+.recent-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $spacer 0 0;
+  min-height: 30rem;
+  padding: $spacer;
+  color: $color-white;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &::after {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: 8rem;
+    right: -57px;
+    bottom: -18px;
+    transform: rotate(-45deg);
+    background-color: $color-offwhite;
+
+    @media (min-width: 60rem) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .post-excerpt {
+    max-width: 60rem;
+  }
+
+  .post-headline {
+    text-transform: uppercase;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem 3rem 0;
+  }
+
+  &:last-child {
+    border-bottom: 0.1rem solid $color-grey;
+  }
+
+  &:first-child {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: none;
+    padding: 0;
+
+    .post-excerpt {
+      max-width: 80rem;
+    }
+
+    .content-wrapper {
+      padding: $spacer;
+    }
+  }
+
+  .post-date {
+    margin-bottom: $spacer;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    width: 100%;
+    overflow: hidden;
+    margin-right: $spacer;
+
+    @media (min-width: 60rem) {
+      height: 40rem;
+    }
+  }
+
+  .thumbnail-image {
+    margin-right: $spacer;
+    min-width: 12rem;
+    height: 20rem;
+    overflow: hidden;
+
+    @media (min-width: 60rem) {
+      min-width: 25rem;
+      background-color: $color-grey;
+    }
+  }
+}

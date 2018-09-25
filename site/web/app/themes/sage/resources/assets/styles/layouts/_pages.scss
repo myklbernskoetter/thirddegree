@@ -1,0 +1,68 @@
+.main {
+  position: relative;
+}
+
+.content {
+  position: relative;
+
+  @media (min-width: 600) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.section {
+  display: block;
+  border-bottom: 0.1rem solid $color-grey;
+  padding: $spacer $spacer $spacer * 2;
+
+  &:first-child {
+    padding: 0;
+  }
+
+  &.blog-section {
+    img {
+      width: auto;
+    }
+  }
+}
+
+.wrapper {
+  display: block;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 $spacer;
+
+  .sidebar-primary & {
+    @media (min-width: 60rem) {
+      width: 75%;
+      margin: 0;
+    }
+  }
+}
+
+.attachment-medium {
+  max-width: 30rem;
+}
+
+.section-text,
+.subtitle {
+  margin-bottom: $spacer;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.perfect-pullquote {
+  font-weight: bold;
+  color: $color-grey;
+}

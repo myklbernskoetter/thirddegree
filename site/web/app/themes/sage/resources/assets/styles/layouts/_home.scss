@@ -1,0 +1,14 @@
+.home {
+  .section {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: $spacer * 2;
+    background-color: $color-offwhite;
+    z-index: 1;
+  }
+
+  .section:nth-child(2n -1) {
+    background-color: lighten($color-grey, 5%);
+    z-index: 2;
+  }
+}

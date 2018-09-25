@@ -1,0 +1,25 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $spacer * 2;
+  color: $color-white;
+  background-color: $color-black;
+
+  @media (min-width: 60rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  padding: 0;
+  list-style: none;
+
+  a {
+    padding: 2rem;
+    color: $color-white;
+  }
+}

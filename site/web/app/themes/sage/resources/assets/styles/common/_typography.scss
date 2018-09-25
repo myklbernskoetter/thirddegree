@@ -1,0 +1,65 @@
+// ==============
+// Typography
+// ==============
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-family: $font-lato, sans-serif;
+  font-weight: bold;
+}
+
+h1,
+.h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+
+  @media (min-width: 60rem) {
+    font-size: 5rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem;
+
+  @media (min-width: 60rem) {
+    font-size: 3rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 1.8rem;
+
+  @media (min-width: 60rem) {
+    font-size: 2rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 1.8rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-family: $font-raleway, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+a {
+  color: $color-red;
+
+  &:hover,
+  &:focus {
+    color: darken($color-blue, 25%);
+  }
+}

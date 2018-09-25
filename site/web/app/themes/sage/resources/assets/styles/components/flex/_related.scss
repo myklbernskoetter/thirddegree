@@ -1,0 +1,22 @@
+.related-section {
+  .blurb,
+  .image {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .image {
+    margin-left: -0.5rem;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .blurb,
+    .image {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.faq-list {
+  max-width: 90rem;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.faq-item {
+  margin-bottom: $spacer;
+
+  &.active {
+    border: 2px solid $color-black;
+  }
+}
+
+.faq-section {
+  display: block;
+}
+
+.faq-button {
+  border: 2px solid $color-black;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  transform: scaleX(0.95);
+  transition: all 500ms;
+  text-align: start;
+
+  .active & {
+    border: 0;
+    transform: scaleX(1);
+  }
+
+  &:hover,
+  &:focus {
+    transform: scaleX(1);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.faq-text {
+  display: none;
+  padding: 2rem;
+
+  .active & {
+    display: block;
+  }
+}

@@ -1,0 +1,24 @@
+.timeline-section {
+  .timeline {
+    position: relative;
+    width: 75%;
+    height: 0.5rem;
+    padding: 4rem;
+    border-bottom: 0.5rem solid $color-red;
+  }
+
+  .timeline-event {
+    position: absolute;
+    top: -2rem;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
+}

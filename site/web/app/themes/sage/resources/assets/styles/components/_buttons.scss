@@ -1,0 +1,47 @@
+button,
+.button,
+.btn {
+  @include naked-button;
+
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-black;
+  cursor: pointer;
+  transition: all 350ms;
+
+  &.primary {
+    background-color: $color-yellow;
+    box-shadow: 0 0 5px 1px $color-black inset;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-yellow, 10%);
+    }
+  }
+
+  &.secondary {
+    box-shadow: 0 0 5px 1px $color-black inset;
+    color: $color-white;
+    background-color: $color-blue;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-blue, 10%);
+    }
+  }
+
+  &.tertiary {
+    color: $color-white;
+    background-color: $color-red;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-red, 10%);
+    }
+  }
+}

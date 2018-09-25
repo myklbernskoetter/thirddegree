@@ -1,0 +1,39 @@
+.featured-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: $spacer 0;
+  padding: 2rem;
+
+  &.has-border {
+    margin-bottom: $spacer;
+    border: 2px solid $color-black;
+    padding: 2rem;
+  }
+
+  .icon {
+    @media (min-width: 60rem) {
+      position: absolute;
+      top: $spacer;
+      right: $spacer;
+    }
+  }
+
+  .featured-left {
+    align-self: flex-start;
+  }
+
+  .featured-center {
+    text-align: center;
+  }
+
+  .featured-right {
+    align-self: flex-end;
+  }
+}
+
+.featured-cta {
+  margin-top: $spacer;
+  text-align: center;
+}

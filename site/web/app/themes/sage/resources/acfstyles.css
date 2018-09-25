@@ -1,0 +1,45 @@
+.acf-flexible-content .layout .acf-fc-layout-handle {
+  background-color: #23282d;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wp-admin .acf-flexible-content .layout .acf-fc-layout-handle {
+  color: #fff;
+  cursor: pointer;
+}
+
+.acf-repeater.-row > table > tbody > tr > td,
+.acf-repeater.-block > table > tbody > tr > td {
+  border-top: 0.2rem solid #23282d;
+}
+
+.acf-repeater .acf-row-handle {
+  vertical-align: top !important;
+  padding-top: 1.6rem;
+}
+
+.acf-repeater .acf-row-handle span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #23282d;
+}
+
+.acf-repeater .acf-row-handle .acf-icon.-minus {
+  top: 3rem;
+}
+
+.acf-tab-wrap.-left .acf-tab-group li.active a {
+  background-color: #dddcb5;
+  border: 1px solid #000;
+  border-right: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 500ms;
+}
+
+.acf-input-wrap input {
+  border: 1px solid #666;
+  border-radius: 5px;
+}
